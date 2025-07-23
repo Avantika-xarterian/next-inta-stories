@@ -4,6 +4,7 @@ import { useRef } from 'react'
 // import { useStoryPlayer } from '../hooks/useStoryPlayer'
 import { StoryUser } from '../types'
 import { useStoryPlayer } from './hooks/useStoryPlayer'
+import ProgressBar from './ProgressBar'
 
 interface Props {
   user: StoryUser
