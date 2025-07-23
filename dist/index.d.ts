@@ -29,14 +29,13 @@ interface StoriesModalProps {
 }
 declare function StoriesModal({ users, onClose, initialIndex }: StoriesModalProps): any;
 
-interface SingleUserStoryViewerProps {
+interface Props {
     user: StoryUser;
     isActive: boolean;
-    onNext: () => void;
     onPrev: () => void;
     onComplete: () => void;
 }
-declare function SingleUserStoryViewer({ user, isActive, onPrev, onComplete, }: SingleUserStoryViewerProps): any;
+declare function SingleUserStoryViewer({ user, isActive, onPrev, onComplete }: Props): any;
 
 export { SingleUserStoryViewer, StoriesModal };
 export type { Story };
