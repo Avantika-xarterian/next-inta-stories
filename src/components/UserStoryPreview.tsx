@@ -23,7 +23,7 @@ export default function UserStoryPreview({
   onComplete,
 }: UserStoryPreviewProps) {
   if (!user) {
-    return <div className="w-440 h-90" />;
+    return <div className="w-[190px] h-[45vh]" />;
   }
 
   const isActive = index === currentUserIndex;
