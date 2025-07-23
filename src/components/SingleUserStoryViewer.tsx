@@ -1,8 +1,9 @@
 'use client'
 
 import { useRef } from 'react'
-import { useStoryPlayer } from '../hooks/useStoryPlayer'
+// import { useStoryPlayer } from '../hooks/useStoryPlayer'
 import { StoryUser } from '../types'
+import { useStoryPlayer } from './hooks/useStoryPlayer'
 
 interface Props {
   user: StoryUser
