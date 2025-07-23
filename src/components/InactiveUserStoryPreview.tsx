@@ -14,7 +14,7 @@ export default function InactiveUserStoryPreview({ user }: Props) {
   const [isLoaded, setIsLoaded] = useState(false);
 
   return (
-    <div  className="darkBg relative w-full h-full flex flex-col rounded-xl overflow-hidden">
+    <div  className="bg-[#14181C] relative w-full h-full flex flex-col rounded-xl overflow-hidden">
       <div className="flex-1 relative flex items-center justify-center cursor-pointer">
         {/* <img src={story.media} alt={story.id} className="max-w-full max-h-full object-contain" /> */}
         <ImageWithFallback
