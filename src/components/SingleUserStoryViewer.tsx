@@ -154,7 +154,7 @@ export default function SingleUserStoryViewer({
         {Array.from({ length: totalStories }).map((_, index) => (
           <div
             key={index}
-            className="flex-1 h-1 bg-white bg-opacity-30 rounded-full overflow-hidden"
+            className="flex-1 h-1 bg-white transparent-white rounded-full overflow-hidden"
           >
             <div
               className="h-full bg-white transition-all duration-100 ease-linear"
