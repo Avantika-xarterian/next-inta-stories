@@ -34,6 +34,7 @@ export default [
         extract: true, // creates a separate CSS file (recommended for packages)
         minimize: true,
         sourceMap: true,
+        inject: true
       })
     ],
     external: ["react", "react-dom", 'next/image', 'next/head', 'next/link'],
