@@ -1,9 +1,8 @@
 'use client'
-// import { useStoryPlayer } from '../hooks/useStoryPlayer'
+
+import { useRef } from 'react'
+import { useStoryPlayer } from '../hooks/useStoryPlayer'
 import { StoryUser } from '../types'
-import ProgressBar from './ProgressBar'
-import { useStoryPlayer } from './hooks/useStoryPlayer'
-// import ProgressBar from './ProgressBar'
 
 interface Props {
   user: StoryUser
@@ -82,7 +81,7 @@ export default function SingleUserStoryViewer({ user, isActive, onPrev, onComple
         onTouchEnd={handleTouchEnd}
       >
         {type === 'image' ? (
-          <ImageWithFallback
+           <ImageWithFallback
             fill
             ref={mediaRef as React.RefObject<HTMLImageElement>}
             src={currentStory?.media}
