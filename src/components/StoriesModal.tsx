@@ -1,5 +1,4 @@
 'use client'
-import '../styles/globals.css'
 import '../styles/tailwind.css';
 
 import { X } from 'lucide-react'

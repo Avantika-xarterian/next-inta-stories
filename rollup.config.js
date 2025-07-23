@@ -31,10 +31,10 @@ export default [
       typescript({ tsconfig: "./tsconfig.json" }),
       terser(),
       postcss({
-        extract: true, // creates a separate CSS file (recommended for packages)
+        inject: true,     // <-- this is key
+        extract: false,
         minimize: true,
-        sourceMap: true,
-        inject: true
+        sourceMap: true
       })
     ],
     external: ["react", "react-dom", 'next/image', 'next/head', 'next/link'],
