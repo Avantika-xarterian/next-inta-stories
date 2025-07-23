@@ -1,0 +1,35 @@
+.opacity-30 {
+  opacity: 30%;
+}
+
+.darkBg {
+  background-color: #14181c;
+}
+
+.w-190 {
+  width: 190px;
+}
+.h-45vh {
+  height: 45vh;
+}
+.w-440 {
+  width: 440px;
+}
+.h-90 {
+  height: 90vh;
+}
+.-left-9 {
+  left: -9px;
+}
+
+.top-50 {
+  top: 50%;
+}
+.-right-9 {
+  right: -9px;
+}
+
+.-translate-y-1\/2 {
+  --tw-translate-y: -50% *
+  translate: var(--tw-translate-x) var(--tw-translate-y);
+}
