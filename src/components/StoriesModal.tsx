@@ -53,7 +53,7 @@ export default function StoriesModal({ users, onClose, initialIndex }: StoriesMo
     <section
       role="dialog"
       aria-modal="true"
-      className="fixed inset-0 bg-dark2 z-[9999] flex items-center justify-center"
+      className="fixed inset-0 darkBg z-[9999] flex items-center justify-center"
     >
       <button
         onClick={onClose}
