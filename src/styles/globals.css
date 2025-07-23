@@ -33,3 +33,6 @@
   --tw-translate-y: -50% *
   translate: var(--tw-translate-x) var(--tw-translate-y);
 }
+.bg-gradient-to-b {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
