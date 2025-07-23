@@ -100,6 +100,7 @@ export default function ActiveUserStoryViewer({
               alt="Story"
                fill
               placeholder="blur"
+              blurDataURL="/assets/PlaceholderStories.svg"
               className="rounded-xl object-cover"
               onLoad={() => (hasAdvanced.current = false)}
               onError={handleMediaError}
