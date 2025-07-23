@@ -3,6 +3,36 @@ import { useCallback, useEffect, useRef, useState } from 'react'
 import useDebounce from '@/shared/hooks/useDebounce'
 import { ViewPortEndpoints } from '@/shared/utils'
 
+import { useEffect, useState } from 'react'
+
+function useDebounce<T>(value: T, delay: number = 1000) {
+  const [debouncedValue, setDebouncedValue] = useState(value)
+  useEffect(() => {
+    const handler = setTimeout(() => {
+      setDebouncedValue(value)
+    }, delay)
+    return () => {
+      clearTimeout(handler)
+    }
+  }, [value, delay])
+  return debouncedValue
+}
+
+
+
+const ViewPortEndpoints = ({ breakpoints = [], currentSize }: any) => {
+  let isIntersecting = false
+  for (let i = 0; i < breakpoints.length; i++) {
+    const [start, end] = breakpoints[i]
+    if (currentSize > start && currentSize < end) {
+      isIntersecting = true
+      break
+    } else {
+      isIntersecting = false
+    }
+  }
+  return { isIntersecting }
+}
 function useWindowSize() {
   const isIntersecting = useCallback(
     (currentSize: number) =>
