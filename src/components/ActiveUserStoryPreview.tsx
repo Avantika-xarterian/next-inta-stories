@@ -54,7 +54,7 @@ export default function ActiveUserStoryViewer({
   return (
     <div className="relative w-full h-full bg-[#14181C] flex flex-col rounded-xl">
       {/* Overlay */}
-      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-black/80 to-transparent z-10 pointer-events-none" />
+      <div className="absolute top-0 left-0 right-0 h-32 bg-gradient-to-b from-[rgba(0,0,0,0.8)] to-transparent z-10 pointer-events-none" />
 
       {/* Progress Bar */}
       {/* <div className="flex gap-1 p-2 absolute top-0 left-0 right-0 z-10">
