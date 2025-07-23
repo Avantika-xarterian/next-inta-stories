@@ -11,7 +11,7 @@ export default function ProgressBar({ total, currentIndex, progress }: ProgressB
   return (
     <div className="flex gap-1 p-2 absolute top-0 left-0 right-0 z-10">
       {Array.from({ length: total }).map((_, idx) => (
-        <div key={idx} className="flex-1 h-1 transparent-white bg-opacity-30 rounded-full overflow-hidden">
+        <div key={idx} className="flex-1 h-1 bg-white bg-opacity-30 bg-opacity-30 rounded-full overflow-hidden">
           <div
             className="h-full bg-white transition-all duration-75 ease-linear"
             style={{

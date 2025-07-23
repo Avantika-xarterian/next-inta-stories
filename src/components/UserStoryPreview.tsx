@@ -1,16 +1,16 @@
-import { motion } from 'framer-motion'
-import { StoryUser } from '../types'
-import ActiveUserStoryViewer from './ActiveUserStoryPreview'
-import InactiveUserStoryPreview from './InactiveUserStoryPreview'
+import { motion } from "framer-motion";
+import { StoryUser } from "../types";
+import ActiveUserStoryViewer from "./ActiveUserStoryPreview";
+import InactiveUserStoryPreview from "./InactiveUserStoryPreview";
 // components/UserStoryPreview.tsx
 interface UserStoryPreviewProps {
-  user?: StoryUser
-  index: number
-  currentUserIndex: number
-  totalUsers: number
-  onUserSelect: (index: number) => void
-  onPrev: () => void
-  onComplete: () => void
+  user?: StoryUser;
+  index: number;
+  currentUserIndex: number;
+  totalUsers: number;
+  onUserSelect: (index: number) => void;
+  onPrev: () => void;
+  onComplete: () => void;
 }
 
 export default function UserStoryPreview({
@@ -20,17 +20,17 @@ export default function UserStoryPreview({
   totalUsers,
   onUserSelect,
   onPrev,
-  onComplete
+  onComplete,
 }: UserStoryPreviewProps) {
   if (!user) {
-    return <div className="w-440 h-90" />
+    return <div className="w-440 h-90" />;
   }
 
-  const isActive = index === currentUserIndex
+  const isActive = index === currentUserIndex;
   const containerClass = `
     relative rounded-xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out
-    ${isActive ? 'w-440 px-9 h-90 z-10' : 'w-190 h-45vh z-0'}
-  `
+    ${isActive ? "w-[440px] px-9 h-[90vh] z-10" : "w-[190px] h-[45vh] z-0"}
+  `;
 
   return (
     <motion.div
@@ -53,5 +53,5 @@ export default function UserStoryPreview({
         <InactiveUserStoryPreview user={user} />
       )}
     </motion.div>
-  )
+  );
 }
